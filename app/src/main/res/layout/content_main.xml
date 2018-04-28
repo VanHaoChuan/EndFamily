@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/content_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="anki.personal.fanhaochuan.mako.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <TableLayout
+        android:id="@+id/cantent_table"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/game_asstes"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/game_asstes"
+                    android:textSize="20dp"
+                    tools:text="@string/game_asstes" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="20dp"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/game_discussion"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="20dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/game_discussions"
+                    android:textSize="20dp"
+                    tools:text="@string/game_discussions" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/more_games"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clickable="true"
+                android:foreground="?android:attr/selectableItemBackground"
+                app:cardElevation="20dp"
+                app:cardMaxElevation="30dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="15dp"
+                    android:text="@string/more_games"
+                    android:textSize="20dp"
+                    tools:text="@string/more_games" />
+            </android.support.v7.widget.CardView>
+        </TableRow>
+
+    </TableLayout>
+
+<!--
+    <android.support.design.widget.TabLayout
+        app:tabGravity="fill"
+        app:tabMode="fixed"
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TableRow
+
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+        </TableRow>
+        <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        </TableRow>
+
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/Asstes"
+            android:layout_height="match_parent">
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/Game_Asstes_Web"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </android.support.v4.view.ViewPager>
+        <android.support.v4.view.ViewPager
+        android:layout_width="match_parent"
+        android:id="@+id/Discussion"
+        android:layout_height="match_parent">
+        <WebView
+            android:layout_width="match_parent"
+            android:id="@+id/Game_Discussion_Web"
+            android:layout_height="match_parent">
+
+        </WebView>
+    </android.support.v4.view.ViewPager>
+        <android.support.v4.view.ViewPager
+            android:layout_width="match_parent"
+            android:id="@+id/More_Games"
+            android:layout_height="match_parent">
+            <WebView
+                android:layout_width="match_parent"
+                android:id="@+id/More_Games_Web"
+                android:layout_height="match_parent">
+
+            </WebView>
+        </android.support.v4.view.ViewPager>
+    </android.support.design.widget.TabLayout>
+    -->
+</android.support.constraint.ConstraintLayout>

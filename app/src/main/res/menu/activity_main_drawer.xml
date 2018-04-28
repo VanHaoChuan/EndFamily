@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_camera"
+            android:icon="@drawable/ic_mode_edit_black_24dp"
+            android:title="游戏日志" />
+        <item
+            android:id="@+id/nav_gallery"
+            android:icon="@mipmap/ic_perm_contact_calendar_white"
+            android:title="查看日历" />
+        <item
+            android:id="@+id/nav_slideshow"
+            android:icon="@mipmap/ic_question_answer_black_24dp"
+            android:title="加入我们" />
+        <item
+            android:id="@+id/nav_manage"
+            android:icon="@mipmap/ic_people_black_24dp"
+            android:title="登陆" />
+    </group>
+<!--
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Share" />
+            <item
+                android:id="@+id/nav_send"
+                android:icon="@drawable/ic_menu_send"
+                android:title="Send" />
+        </menu>
+
+    </item>
+    -->
+    <item android:title="Settings">
+        <menu>
+            <item android:id="@+id/nav_dayview"
+                android:icon="@mipmap/ic_brightness_5_black_24dp"
+                android:title="日间模式"/>
+            <item android:id="@+id/nav_nightview"
+                    android:icon="@mipmap/ic_brightness_2_black_24dp"
+                android:title="夜间模式"
+                />
+            <item
+                android:id="@+id/nav_set"
+                android:icon="@mipmap/ic_settings_black_24dp"
+                android:title="设置"/>
+        </menu>
+    </item>
+
+</menu>
